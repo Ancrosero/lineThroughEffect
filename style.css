@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c0392b;
+    font-family: 'Mulish', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+h1{
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 1;    
+}
+
+.overlay {
+	z-index: 2;
+}
+
+.line {
+    background-color:black;
+    border-radius: 10px;
+    position: absolute;
+    top: 51%;
+    left: -1vh;
+    transform: translateY(-50%);
+    height: 0.5vw;
+    width: 0;
+    animation: grow 3s linear forwards;
+    z-index: 2;
+}
+
+@keyframes grow {
+    to {
+        width: 100vw;
+    }
+}
